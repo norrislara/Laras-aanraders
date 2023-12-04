@@ -1,0 +1,206 @@
+/* roze = #cba6b1 beige = #f0f0f0 */
+
+body{
+    background-color: #f0f0f0;
+}
+
+header nav ul{ /*navigatiebalk*/
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+}
+
+header nav ul li{ /*navigatiebalk*/
+    list-style: none;
+    padding: 1.4em;
+    margin: 1em;
+    border-radius: 0.5em;
+}
+
+header nav ul li a{ /*navigatiebalk*/
+    text-decoration: none;
+    color: #DE6688;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---------------------------------------------------------------------------------*/
+/*homepagina*/
+.home, main ul{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+}
+
+.home, main ul li { 
+    list-style: none;
+    margin: 1em;
+}
+
+.home, main img{
+    height: 22vw; 
+    margin-top: 1.2em;
+}
+
+.home, .welkom h1{ 
+    display: flex; justify-content: center;
+    color: #cba6b1;
+    font-size: 4em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.home, .welkom p{
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+}
+
+.home, .wiebenik {
+    display: flex;
+  }
+  
+.home, .kolom1, .kolom2 {
+    padding: 5%;
+  }
+  
+.home, .kolom1 {
+    background-color: #f0f0f0;
+  }
+
+.home, .kolom1 img{
+    height: 40vw;
+  }
+  
+.home, .kolom2 {
+    background-color: #cba6b1;
+    border-radius: 20%;
+  }
+
+
+/*---------------------------------------------------------------------------------*/
+/*restaurant LaVespa*/
+.restaurants, .lavespa {
+    display: flex;
+  }
+  
+.restaurants, .kolom3, .kolom4 {
+    padding: 5%;
+  }
+
+.restaurants, .kolom3 img{
+    height: 20vw;
+  }
+
+.restaurants, .kolom4, .contactlavespa p{
+    margin: 0;
+}
+
+.restaurants, .kolom4, .contactlavespa h4{
+    margin: 0;
+}
+/*restaurant Pind Punjabi*/
+.restaurants, .pindpunjabi {
+    display: flex;
+}
+
+.restaurants, .kolom5, .kolom6 {
+    padding: 5%;
+  }
+
+.restaurants, .kolom6 img{
+    height: 20vw;
+  }
+
+.restaurants, .kolom5, .contactpindpunjabi p{
+    margin: 0;
+}
+
+.restaurants, .kolom5, .contactpindpunjabi h4{
+    margin: 0;
+}
+
+/*restaurant MOUT*/
+.restaurants, .mout {
+    display: flex;
+  }
+  
+.restaurants, .kolom7, .kolom8 {
+    padding: 5%;
+  }
+
+.restaurants, .kolom7 img{
+    height: 20vw;
+  }
+
+  .restaurants, .kolom5, .contactmout p{
+    margin: 0;
+}
+
+.restaurants, .kolom5, .contactmout h4{
+    margin: 0;
+}
+
+/*restaurant Cedars*/
+.restaurants, .cedars {
+    display: flex;
+}
+
+.restaurants, .kolom9, .kolom10 {
+    padding: 5%;
+  }
+
+.restaurants, .kolom10 img{
+    height: 20vw;
+  }
+
+.restaurants, .kolom9, .contactcedars p{
+    margin: 0;
+}
+
+.restaurants, .kolom9, .contactcedars h4{
+    margin: 0;
+}
+
+/*restaurant de Zeemeeuw*/
+.restaurants, .dezeemeeuw {
+    display: flex;
+  }
+  
+.restaurants, .kolom11, .kolom12 {
+    padding: 5%;
+  }
+
+.restaurants, .kolom11 img{
+    height: 20vw;
+  }
+
+.restaurants, .kolom9, .contactdezeemeeuw p{
+    margin: 0;
+}
+
+.restaurants, .kolom9, .contactdezeemeeuw h4{
+    margin: 0;
+}
+
+/*restaurant Archibald*/
+.restaurants, .archibald {
+    display: flex;
+}
+
+.restaurants, .kolom13, .kolom14 {
+    padding: 5%;
+  }
+
+.restaurants, .kolom14 img{
+    height: 20vw;
+  }
+
+.restaurants, .kolom9, .contactarchibald p{
+    margin: 0;
+}
+
+.restaurants, .kolom9, .contactarchibald h4{
+    margin: 0;
+}
