@@ -1,17 +1,15 @@
-/* * {
-  padding: 0;
-  margin: 0;
-} */
-
-
 /*---------------------------------------------------------------------------------*/
 /* algemeen */
 
 body {
   background-color: #F2F2F2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-h1, h2{
+h1,
+h2 {
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -23,10 +21,6 @@ a {
 
 p {
   font-size: 0.9em;
-  margin: 5%;
-  margin-top: 1%;
-  margin-right: 9%;
-  margin-left: 9%;
   text-align: justify;
 }
 
@@ -35,12 +29,9 @@ h1 {
   justify-content: center;
   font-size: 3em;
   padding: 1em;
-  border-bottom: solid;
-  border-top: solid;
-  border-color: #DE6688;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 10%;
+  border-bottom: solid #DE6688;
+  border-top: solid #DE6688;
+  margin: 10% 25% 0;
 }
 
 h2 {
@@ -49,8 +40,6 @@ h2 {
 
 h4 {
   font-size: 0.9em;
-  margin-bottom: 0%;
-  margin-left: 9%;
 }
 
 /*---------------------------------------------------------------------------------*/
@@ -68,64 +57,93 @@ header nav {
 
 header nav ul {
   display: flex;
-  /* flex-direction: row; */
-  background-color: #2e2a2b;
+  background-color: #DE6688;
   border-radius: 10em;
   padding: 0;
 }
 
 header nav ul li {
   list-style: none;
-  margin: 1em;
   text-align: center;
+  margin: 5px 20px;
+  padding: 10px;
+  /* pixels, zodat de tekst niet verpringt in de hover stage*/
+}
+
+header nav ul li:hover {
+  border-bottom: 1px solid #F2F2F2;
+  border-top: 1px solid #F2F2F2;
+  margin: 4px 20px 4px;
+  /*"*/
+}
+
+/*---------drop down menu---------*/
+
+header nav ul li ul {
+  position: absolute;
+  left: -999em;
+  /*zet de ul buiten het zicht*/
+  margin: 1.7%;
+  margin-left: -2%;
+}
+
+header ul li:hover ul {
+  left: auto;
+  /*plaatst de tweede ul automatisch onder de eerste ul*/
+}
+
+header ul li ul li a {
+  margin-top: 4px;
+}
+
+.home header nav ul li ul li:first-of-type,
+.restaurants header nav ul li:nth-of-type(2),
+.vakantiebestemmingen header nav ul li:nth-of-type(3),
+.filmsenseries header nav ul li:nth-of-type(4) {
+  margin: 5px 20px;
+  padding: 10px;
+  /*pixels, zodat de tekst niet verpringt in de hover stage*/
+}
+
+.home header nav ul li ul li:first-of-type:hover,
+.restaurants header nav ul li:nth-of-type(2):hover,
+.vakantiebestemmingen header nav ul li:nth-of-type(3):hover,
+.filmsenseries header nav ul li:nth-of-type(4):hover {
+  border-bottom: 1px solid #F2F2F2;
+  border-top: 1px solid #F2F2F2;
+  margin: 4px 20px 4px;
+  /*"*/
 }
 
 header nav ul li a {
   text-decoration: none;
   color: #F2F2F2;
   font-size: 0.9em;
+  text-transform: uppercase;
 }
+
 
 /*---------------------------------------------------------------------------------*/
 /*homepagina*/
 
-.home main ul {
-  display: flex;
-  justify-content: center;
-}
-
-.home main ul img {
-  height: 18vw;
-  padding: 5%;
-}
-
-.home main ul img:hover {
-  border: solid #DE6688;
-}
-
-.home main ul li {
-  list-style: none;
-  padding: 7%;
-}
-
 .home main section:first-of-type p {
-  margin: 0 24%;
+  margin: 15% 20%;
   border: 0.5em dotted #DE6688;
   padding: 3%;
-}
-
-.home main section+section {
-  display: flex;
-  align-items: center;
-  background-color: #eed7de;
-  padding: 4% 0;  /*boven;rechts;onder;links*/
-  margin-top: 10%;
 }
 
 .home main section+section img {
   max-width: 20em;
   margin-right: 5%;
   margin-left: 14%;
+}
+
+.home main section+section {
+  display: flex;
+  background-color: #eed7de;
+  padding: 4% 0;
+  /*boven;rechts;onder;links*/
+  margin-top: 10%;
 }
 
 .home main section+section div {
@@ -140,31 +158,62 @@ header nav ul li a {
 }
 
 /*---------------------------------------------------------------------------------*/
+/*restaurants*/
 
 .restaurants main>article {
   display: flex;
+  margin-top: 10%;
+}
+
+.restaurants main>article h2 {
+  display: flex;
+  margin-left: 9%;
+}
+
+.restaurants main>article h4,
+.restaurants main>article p {
+  display: flex;
+  margin: 1% 9% 0;
 }
 
 .restaurants main article:nth-of-type(odd) {
   flex-direction: row-reverse;
 }
 
-.restaurants h2 {
-  margin-left: 9%;
-  margin-bottom: 1%;
+.restaurants div {
+  margin: 0 5%;
 }
 
-.restaurants div {
+.restaurants div img {
+  border: solid none;
+  border-radius: 0.5em;
+}
+
+.restaurants main article article {
+  background-color: #eed7de;
+  border: solid none;
+  border-radius: 0.5em;
   margin-left: 5%;
   margin-right: 5%;
-  padding: 1%;
 }
 
 /*---------------------------------------------------------------------------------*/
 /*Vakantiebestemmingen*/
 
+.vakantiebestemmingen main div p {
+  text-align: center;
+  margin-top: 7%;
+}
+
 .vakantiebestemmingen main nav ul li {
   list-style: none;
+  margin-bottom: 5px;
+}
+
+.vakantiebestemmingen main nav ul li:hover {
+  border-bottom: 2px solid;
+  border-color: #DE6688;
+  margin-bottom: 3px;
 }
 
 .vakantiebestemmingen main nav ul li img {
@@ -178,28 +227,57 @@ header nav ul li a {
 }
 
 .vakantiebestemmingen main ul li {
-  padding: 7%;
+  padding: 4%;
+}
+
+.vakantiebestemmingen #spanje,
+#frankrijk,
+#italie,
+#zwitserland,
+#costarica {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.vakantiebestemmingen article>article {
+  display: flex;
+}
+
+.vakantiebestemmingen article>article>article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  margin: 4%;
+  background-color: #eed7de;
+}
+
+.vakantiebestemmingen article>article>article img {
+  height: 60%;
+  width: 60%;
 }
 
 /*---------------------------------------------------------------------------------*/
 /*Films en Series*/
 
 .filmsenseries h2 {
-  margin: 5%;
-  /* gaat om de 'films' en 'series'*/
+  margin: 15% 40% 6%;
+  padding-bottom: 1%;
   text-align: center;
+  border-bottom: solid #DE6688;
 }
 
-.filmsenseries div h4 {
-  margin: 5%;
+.filmsenseries article h4,
+.filmsenseries article p {
+  margin: 7%;
 }
 
-.filmsenseries div img {
+.filmsenseries article img {
   width: 50%;
   padding: 20px;
 }
 
-.filmsenseries div img:hover {
+.filmsenseries article img:hover {
   border: 5px solid #DE6688;
   padding: 15px;
 }
@@ -214,7 +292,7 @@ header nav ul li a {
   flex-wrap: wrap;
 }
 
-.filmsenseries div {
+.filmsenseries article {
   text-align: center;
   flex: 1 1 calc(33.33% - 5%);
   /* drie afbeeldingen per rij*/
@@ -222,23 +300,33 @@ header nav ul li a {
   background-color: #eed7de;
   margin: 1%;
   padding-top: 2%;
+  border: solid none;
+  border-radius: 1em;
 }
 
 /*---------------------------------------------------------------------------------*/
 /*footer*/
-footer img {
-  width: 4%;
-}
-
-footer a {
-  text-decoration: none;
-  color: black;
-  padding-top: 3%;
-  padding-right: 3%;
-}
 
 footer {
-  border-top: solid;
+  display: flex;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-top: solid #DE6688;
+  border-bottom: solid #DE6688;
   margin-top: 5%;
+  margin-top: auto;
+}
 
+footer img {
+  width: 12%;
+  padding-left: 5%;
+  margin-top: 3%;
+}
+
+footer p {
+  padding: 0 3%;
+}
+
+footer p strong {
+  font-weight: normal;
 }
