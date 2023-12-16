@@ -42,6 +42,14 @@ h4 {
   font-size: 0.9em;
 }
 
+strong{
+  font-weight: normal;
+}
+
+em{
+  font-style: normal;
+}
+
 /*---------------------------------------------------------------------------------*/
 /* navigatie balk */
 
