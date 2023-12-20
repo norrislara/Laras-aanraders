@@ -13,7 +13,7 @@ h2 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-h4,
+h3,
 p,
 a {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -38,7 +38,7 @@ h2 {
   font-size: 2em;
 }
 
-h4 {
+h3 {
   font-size: 0.9em;
 }
 
@@ -168,36 +168,33 @@ header nav ul li a {
 /*---------------------------------------------------------------------------------*/
 /*restaurants*/
 
-.restaurants main>article {
+.restaurants main>div {
   display: flex;
   margin-top: 10%;
 }
 
-.restaurants main>article h2 {
+.restaurants main article h2 {
   display: flex;
   margin-left: 9%;
 }
 
-.restaurants main>article h4,
-.restaurants main>article p {
+.restaurants main article h3,
+.restaurants main article p {
   display: flex;
   margin: 1% 9% 0;
 }
 
-.restaurants main article:nth-of-type(odd) {
+.restaurants main div:nth-of-type(odd) {
   flex-direction: row-reverse;
-}
-
-.restaurants div {
-  margin: 0 5%;
 }
 
 .restaurants div img {
   border: solid none;
   border-radius: 0.5em;
+  margin: 0 5%;
 }
 
-.restaurants main article article {
+.restaurants main div article {
   background-color: #eed7de;
   border: solid none;
   border-radius: 0.5em;
@@ -247,11 +244,11 @@ header nav ul li a {
   margin-right: 7%;
 }
 
-.vakantiebestemmingen article>article {
+.vakantiebestemmingen article>div {
   display: flex;
 }
 
-.vakantiebestemmingen article>article>article {
+.vakantiebestemmingen article>div>article {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -260,7 +257,7 @@ header nav ul li a {
   background-color: #eed7de;
 }
 
-.vakantiebestemmingen article>article>article img {
+.vakantiebestemmingen article>div>article img {
   height: 60%;
   width: 60%;
 }
@@ -268,10 +265,9 @@ header nav ul li a {
 /*---------------------------------------------------------------------------------*/
 /*Films en Series*/
 
-.filmsenseries h2 {
-  margin: 15% 40% 6%;
+.filmsenseries section h2 {
+  margin: 15% 45% 6%;
   padding-bottom: 1%;
-  text-align: center;
   border-bottom: solid #DE6688;
 }
 
@@ -321,7 +317,6 @@ footer {
   padding-bottom: 2%;
   border-top: solid #DE6688;
   border-bottom: solid #DE6688;
-  margin-top: 5%;
   margin-top: auto;
 }
 
